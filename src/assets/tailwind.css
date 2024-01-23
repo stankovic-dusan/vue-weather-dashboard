@@ -1,0 +1,63 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-main-background: #e8ecf6;
+    --color-header-background: #ffffff;
+    --color-primary: #1c294f;
+    --color-secondary: #6d7791;
+    --color-grey: #444444;
+    --color-light: #f5f7ff;
+    --color-dark: #edf1fb;
+    --color-custom: #f5f7ff;
+    --color-icons: #8c95af;
+    --color-active: #1c294f;
+  }
+  :root[class="dark"] {
+    --color-main-background: #1b1a2d;
+    --color-header-background: #464e65;
+    --color-primary: #ffffff;
+    --color-secondary: #c2c6d2;
+    --color-grey: #c2c6d2;
+    --color-light: #464e65;
+    --color-dark: #262a3c;
+    --color-custom: #262a3c;
+    --color-icons: #8c95af;
+    --color-active: #009aff;
+  }
+
+  html {
+    font-family: "Poppins", sans-serif;
+  }
+  h1 {
+    @apply text-7xl;
+    @apply font-light;
+  }
+  h2 {
+    @apply text-[32px];
+    @apply font-semibold;
+  }
+  h3 {
+    @apply text-[28px];
+    @apply font-semibold;
+  }
+  h4 {
+    @apply text-2xl;
+    @apply font-light;
+  }
+  h5 {
+    @apply text-xl;
+    @apply font-semibold;
+  }
+  h6 {
+    @apply text-lg;
+  }
+  p {
+    @apply text-base;
+    @apply font-normal;
+  }
+}
