@@ -110,7 +110,8 @@ export default {
       };
 
       const error = () => {
-        alert("Allow to vue-weather-dashboard to access this device location!");
+        alert("Allow to vue-weather-dashboard to access this device location!\n\nThe application will use defalut location: Belgrade, Serbia");
+        this.fetchWeatherData("Belgrade");
       };
 
       navigator.geolocation.getCurrentPosition(success, error);
